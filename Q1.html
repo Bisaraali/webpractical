@@ -1,0 +1,85 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        let num1=document.getElementById('num1').value,
+         num2=document.getElementById('num2').value;
+        let btn_add =document.getElementById('btn.addition'),
+         btn_sub =document.getElementById('btn.sub'),
+         btn_mult =document.getElementById('btn.mult'),
+         btn_div =document.getElementById('btn.div'),
+         btn_mod =document.getElementById('btn.mod');
+         let span =document.getElementById('answer');
+         document.addEventListener('DOMContentLoaded',()=>{
+            btn_add.addEventListener('click',()=>{
+                addition();
+                console.log(num1+num2);
+            }
+            )
+         }
+         );
+         btn_add-sub.addEventListener('click',()=>{
+            substriction();
+            // span.textContent=substraction();
+         });
+         btn_mult.addEventListener('click',function(){
+                multiplication();
+         } );
+         btn_div.addEventListener('click',()=>{
+            division();
+         });
+        btn_mod.addEventListener('click',()=>{
+             });
+             let addition=()=>{
+                num1=parseInt(document.getElementById('num1').value);
+                num2=parseInt(document.getElementById('num2').value);
+                span.innerHTML=num1+num2;
+                // return num1+num2;
+             }
+             let substraction=()=>{
+                num1=perseInt(document.getElementById('num1').value);
+                num2=perseInt(document.getElementById('num2').value);
+                span.innerHTML=num1+num2;
+
+             }
+             let multiplication =()=>{
+                num1=perseInt(document.getElementById('num1').value); 
+                num2=perseInt(document.getElementById('num2').value);
+                span.innerHTML=num1+num2;
+
+
+             }
+             let division=()=>{
+                num1=perseInt(document.getElementById('num1').value); 
+                num2=perseInt(document.getElementById('num2').value);
+                span.innerHTML=num1+num2;
+                
+                
+
+             }
+             let modulus=()=>{
+                num1=perseInt(document.getElementById('num1').value); 
+                num2=perseInt(document.getElementById('num2').value);
+                span.innerHTML=num1+num2;
+             }
+
+    </script>
+
+    
+</body>
+</html>
+
